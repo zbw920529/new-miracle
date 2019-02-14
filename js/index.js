@@ -14,23 +14,23 @@ function changeActive(navIndex){
     switch(navIndex){
         case 'navHome':
             return(
-                navHome.className='active',navAbout.className='a',navPanner.className='a',navContact.className='a'
+                navHome.style.color='#72b8ff',navAbout.style.color='#fff',navPanner.style.color='#fff',navContact.style.color='#fff'
             )
         case 'navAbout':
             return(
-                navHome.className='a',navAbout.className='active',navPanner.className='a',navContact.className='a'
+                navHome.style.color='#fff',navAbout.style.color='#72b8ff',navPanner.style.color='#fff',navContact.style.color='#fff'
             )
         case 'navPanner':
             return(
-                navHome.className='a',navAbout.className='a',navPanner.className='active',navContact.className='a'
+                navHome.style.color='#fff',navAbout.style.color='#fff',navPanner.style.color='#72b8ff',navContact.style.color='#fff'
             )
         case 'navContact':
             return(
-                navHome.className='a',navAbout.className='a',navPanner.className='a',navContact.className='active'
+                navHome.style.color='#fff',navAbout.style.color='#fff',navPanner.style.color='#fff',navContact.style.color='#72b8ff'
             )
         default:
             return(
-                navHome.class='active',navAbout.class='a',navPanner.class='a',navContact.class='a'
+                navHome.style.color='#72b8ff',navAbout.style.color='#fff',navPanner.style.color='#fff',navContact.style.color='#fff'
             )
     }
 }

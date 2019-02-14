@@ -327,6 +327,12 @@ html,body{
         font-size: 0.16rem;
         white-space: nowrap;
     }
+    .footer_left .left_line{
+        margin-bottom: 0.25rem;
+        width: 1.34rem;
+        height: 0.03rem;
+        background-color: #ffffff;
+    }
     .footers .footer_left_log{
         background: url("../img/btn_lxwm.png");
         background-repeat: no-repeat;
@@ -632,6 +638,9 @@ html,body{
     }
     .footer_right{
         width: 50%;
+    }
+    .footer_left .left_line{
+        margin-bottom: 0.6rem;
     }
     .footer_right img{
         display: inline-block;

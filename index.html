@@ -29,7 +29,18 @@
         </div>
         <!--{/*导航 切换*/}-->
         <ul class="nav" id="nav">
-
+            <li class='nav-li'>
+                <a href="#" class='active' onclick="changeActive('navHome')" id="nav-home">首页</a>
+            </li>
+            <li class='nav-li'>
+                <a href="#about" class='a' onclick="changeActive('navAbout')"id="nav-about">关于我们</a>
+            </li>
+            <li class='nav-li'>
+                <a href="#panner" class='a' onclick="changeActive('navPanner')" id="nav-panner">合作伙伴</a>
+            </li>
+            <li class='nav-li'>
+                <a href="#footer" class='a' onclick="changeActive('navContact')" id="nav-contact">联系我们</a>
+            </li>
         </ul>
         <div class="login">
             <div class="warp">
@@ -98,10 +109,18 @@
                 </a>
             </div>
             <div class="panner_right_left">
-                <a href="http://www.naturade.com.cn/" target='_blank'><img src='./img/btn_nre2.jpg' alt="" onMouseOver="changeHove('nre',1)"/></a>
-                <a href="http://www.lachapelle.cn/" target='_blank'><img src='./img/btn_lsbe2.jpg' alt="" onMouseOver="changeHove('nre',1)"/></a>
-                <a href="http://www.naturade.com.cn/" target='_blank'><img src='./img/btn_yge2.jpg' alt="" onMouseOver="changeHove('nre',1)"/></a>
-                <a href="http://www.peacebird.com.cn/" target='_blank'> <img src='./img/btn_tpn2.jpg' alt="" onMouseOver="changeHove('nre',1)"/></a>
+                <a href="http://www.naturade.com.cn/" target='_blank'>
+                    <img src='./img/btn_nre1.jpg' alt="" onMouseOver="pannerImg('nre')" id="nre"/>
+                </a>
+                <a href="http://www.lachapelle.cn/" target='_blank'>
+                    <img src='./img/btn_lsbe1.jpg' alt="" onMouseOver="pannerImg('lsbe')" id="lsbe"/>
+                </a>
+                <a href="http://www.naturade.com.cn/" target='_blank'>
+                    <img src='./img/btn_yge1.jpg' alt="" onMouseOver="pannerImg('yge')" id="yge"/>
+                </a>
+                <a href="http://www.peacebird.com.cn/" target='_blank'>
+                    <img src='./img/btn_tpn1.jpg' alt="" onMouseOver="pannerImg('tpn')" id="tpn"/>
+                </a>
             </div>
 
         </div>

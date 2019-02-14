@@ -1,1 +1,129 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>数造未来|精益求精</title><link rel="stylesheet" href="index.css"/><script type="text/javascript">var clientWidth=document.documentElement.clientWidth||document.body.offsetWidth,html=document.documentElement;html.style.fontSize=clientWidth/1920*100+"px",console.log(html.style.fontSize),window.onresize=function(){var t=document.documentElement.clientWidth||document.body.offsetWidth;document.documentElement.style.fontSize=t/1920*100+"px"},console.log(document.documentElement.style.fontSize)</script><link href="/static/css/main.f77de96d.chunk.css" rel="stylesheet"></head><body><div id="root"></div><script src="index.js"></script><script>!function(l){function e(e){for(var r,t,n=e[0],o=e[1],u=e[2],f=0,i=[];f<n.length;f++)t=n[f],p[t]&&i.push(p[t][0]),p[t]=0;for(r in o)Object.prototype.hasOwnProperty.call(o,r)&&(l[r]=o[r]);for(s&&s(e);i.length;)i.shift()();return c.push.apply(c,u||[]),a()}function a(){for(var e,r=0;r<c.length;r++){for(var t=c[r],n=!0,o=1;o<t.length;o++){var u=t[o];0!==p[u]&&(n=!1)}n&&(c.splice(r--,1),e=f(f.s=t[0]))}return e}var t={},p={2:0},c=[];function f(e){if(t[e])return t[e].exports;var r=t[e]={i:e,l:!1,exports:{}};return l[e].call(r.exports,r,r.exports,f),r.l=!0,r.exports}f.m=l,f.c=t,f.d=function(e,r,t){f.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},f.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.t=function(r,e){if(1&e&&(r=f(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var t=Object.create(null);if(f.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var n in r)f.d(t,n,function(e){return r[e]}.bind(null,n));return t},f.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return f.d(r,"a",r),r},f.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},f.p="/";var r=window.webpackJsonp=window.webpackJsonp||[],n=r.push.bind(r);r.push=e,r=r.slice();for(var o=0;o<r.length;o++)e(r[o]);var s=n;a()}([])</script><script src="/static/js/1.4c3b2a3f.chunk.js"></script><script src="/static/js/main.bf45978d.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数造未来|精益求精</title>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script type="text/javascript">
+        var clientWidth = document.documentElement.clientWidth || document.body.offsetWidth;
+        // 获取根元素html
+        var html = document.documentElement;
+        //获取当前视口宽度和标准宽度比例 * 标准rem单位得到html的font-size这里设置的行内样式权重最大
+        html.style.fontSize = clientWidth/1920*100 + "px";
+        // 监听window的onresize屏幕的尺寸变化
+        // 如果我们改变为横屏时，html的font-size发生变化
+        window.onresize = function () {
+            var clientWidth = document.documentElement.clientWidth || document.body.offsetWidth;
+            //获取当前视口宽度和标准宽度比例 * 标准rem单位 1rem=512px
+            document.documentElement.style.fontSize = clientWidth/1920*100 + "px";
+        };
+    </script>
+</head>
+<body>
+<div class="newmiracle">
+    <!--头部区域-->
+    <div class="header">
+        <!--{/*log图片*/}-->
+        <div class="header_img">
+            <img src='./img/logo.jpg' alt="log"/>
+        </div>
+        <!--{/*导航 切换*/}-->
+        <ul class="nav" id="nav">
+
+        </ul>
+        <div class="login">
+            <div class="warp">
+                <a href="#footer" class={styles.warp_sq} >申请试用</a>
+                <a href="">登陆GMI</a>
+            </div>
+        </div>
+    </div>
+    <div class="banner" id='banner'>
+        <div class="banner-top"><img src='./img/banner_tm.png' alt="" class="banner_tm"/></div>
+        <div class="banner-bottom"><img src='./img/banner_gd.png' alt="" class="banner_pic"/></div>
+    </div>
+    <!--关于我们-->
+    <div class="about" name='about' id='about'>
+        <div class="left">
+            <h2>ABOUT US</h2>
+            <p class="left_line"></p>
+            <p>我们专注于时尚行业全渠道运营，大数据开发、智能商品管理的系统软件开发。致力于深层次分析和研究时尚行业在互联网环境下的全渠道一体化运行模式。</p>
+            <div class="sell">
+                <span>配补货算法</span>
+                <span>规则管理</span>
+                <span>智能决策</span>
+                <span>商品管理标准</span>
+                <span>数据监控</span>
+                <span>商品生命周期</span>
+                <span>私有化部署</span>
+                <span>店铺匹配</span>
+            </div>
+        </div>
+        <div class="center">
+            <p class="center_first">重点通过大数据、人工智能等技术，创建一套商品全生命周期的智能调补货系统，通过科学数据和算法代替人工决策，实现自动化智能商品管理，为时尚行业提供包含业务咨询和软硬件在内的一体化解决方案。</p>
+            <p>我们的团队有在时尚行业管理上百亿的管理专家、专注于时尚行业信息化管理超过15年的业务专家，以及具有丰富的软件开发经验的产品与研发团队。我们致力于结合领先科技和不断创新的先进理念，通过优秀的产品帮助客户提供更优质的一站式服务。</p>
+            <a href='https://www.lagou.com/gongsi/129170.html' target='_blank'>&gt;加入我们</a>
+        </div>
+        <div class="right">
+            <div class="right-warp">
+                <div class="right_top">
+                    <img src='./img/banner_gmi.jpg' alt=""/>
+                </div>
+                <div class="right_center">
+                    <img src="./img/btn_znph1.jpg" id="znph" onclick="changeCheckd(0)"/>
+                    <img src="./img/btn_znjc1.jpg" id="znjc" onclick="changeCheckd(1)"/>
+                </div>
+                <div class="right_bottom">
+
+                    <img src='./img/znph.gif' id='gif' alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--合作伙伴-->
+    <div class="panner" id='panner'>
+        <div class="panner_left">
+            <h2>COOPERATIVE</h2>
+            <h2>PARTNER</h2>
+            <p class="left_line"></p>
+            <p>全渠道商品管理系统应用于各种规模的企业，通过与我们的合作伙伴在移动策略咨询、开发、后端系统整合以及企业网络方面携手合作，充分发挥大数据的力量。</p>
+        </div>
+        <div class="panner_right">
+            <div class="panner_right_right">
+
+                <a href="http://wpa.qq.com/msgrd?v=3&uin=249900276&site=qq&menu=yes" target='_blank'>
+                    <img src='./img/image_cyhz.jpg' alt=""/>
+                </a>
+            </div>
+            <div class="panner_right_left">
+                <a href="http://www.naturade.com.cn/" target='_blank'><img src='./img/btn_nre2.jpg' alt="" onMouseOver="changeHove('nre',1)"/></a>
+                <a href="http://www.lachapelle.cn/" target='_blank'><img src='./img/btn_lsbe2.jpg' alt="" onMouseOver="changeHove('nre',1)"/></a>
+                <a href="http://www.naturade.com.cn/" target='_blank'><img src='./img/btn_yge2.jpg' alt="" onMouseOver="changeHove('nre',1)"/></a>
+                <a href="http://www.peacebird.com.cn/" target='_blank'> <img src='./img/btn_tpn2.jpg' alt="" onMouseOver="changeHove('nre',1)"/></a>
+            </div>
+
+        </div>
+    </div>
+    <div class="footers" id='footer'>
+        <div class="footer_left">
+            <h2>CONTACT US</h2>
+            <p class="left_line"></p>
+            <p class="footer_left_log">地址：西安市雁塔区科技二路77号西安光电园B-28F</p>
+            <p>EMAIL：dumr@newmiracle.net</p>
+            <p>电话：029-88867219</p>
+            <p class="fot_banquan"><small>Copyright@2011-2019 New miracle Ltd.西安新奇迹版权所有</small> </p>
+            <div class="footer_wx">
+                <img src='./img/image_ewm.jpg' alt=""/>
+            </div>
+        </div>
+
+        <div class="footer_right">
+            <img src='./img/image_db.png' alt=""/>
+        </div>
+    </div>
+</div>
+<script src="./js/index.js"></script>
+</body>
+</html>

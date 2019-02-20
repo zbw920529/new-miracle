@@ -4,25 +4,15 @@
     <meta charset="UTF-8">
     <title>数造未来|精益求精</title>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
-    <script type="text/javascript">
-        var clientWidth = document.documentElement.clientWidth || document.body.offsetWidth;
-        // 获取根元素html
-        var html = document.documentElement;
-        //获取当前视口宽度和标准宽度比例 * 标准rem单位得到html的font-size这里设置的行内样式权重最大
-        html.style.fontSize = clientWidth/1920*100 + "px";
-        // 监听window的onresize屏幕的尺寸变化
-        // 如果我们改变为横屏时，html的font-size发生变化
-        window.onresize = function () {
-            var clientWidth = document.documentElement.clientWidth || document.body.offsetWidth;
-            //获取当前视口宽度和标准宽度比例 * 标准rem单位 1rem=512px
-            document.documentElement.style.fontSize = clientWidth/1920*100 + "px";
-        };
-    </script>
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
 </head>
 <body>
 <div class="newmiracle">
+
     <!--头部区域-->
-    <div class="header">
+    <div class="header" id="header">
         <!--{/*log图片*/}-->
         <div class="header_img">
             <img src='./img/logo.jpg' alt="log"/>
@@ -30,7 +20,7 @@
         <!--{/*导航 切换*/}-->
         <ul class="nav" id="nav">
             <li class='nav-li'>
-                <a href="#" class='a' style="color:#72b8ff" onclick="changeActive('navHome')" id="nav-home">首页</a>
+                <a href="#banner" class='a' style="color:#72b8ff" onclick="changeActive('navHome')" id="nav-home">首页</a>
             </li>
             <li class='nav-li'>
                 <a href="#about" class='a' onclick="changeActive('navAbout')"id="nav-about">关于我们</a>
@@ -42,17 +32,20 @@
                 <a href="#footer" class='a' onclick="changeActive('navContact')" id="nav-contact">联系我们</a>
             </li>
         </ul>
-        <div class="login">
-            <div class="warp">
-                <a href="#footer" class={styles.warp_sq} >申请试用</a>
-                <a href="">登陆GMI</a>
+        <div class="login main clearfix">
+            <div class="warp column">
+                <a  class="md-trigger" data-modal="modal-1" >申请试用</a>
+                <a class="md-trigger" data-modal="modal-1">登陆GMI</a>
             </div>
         </div>
     </div>
+
+    <!--banner图-->
     <div class="banner" id='banner'>
-        <div class="banner-top"><img src='./img/banner_tm.png' alt="" class="banner_tm"/></div>
-        <div class="banner-bottom"><img src='./img/banner_gd.png' alt="" class="banner_pic"/></div>
+        <div class="banner-top"><img src='./img/banner_3.png' alt="" class="banner_tm"/></div>
+        <!--<div class="banner-bottom"><img src='./img/banner_gd2.png' alt="" class="banner_pic"/></div>-->
     </div>
+
     <!--关于我们-->
     <div class="about" name='about' id='about'>
         <div class="left">
@@ -81,8 +74,8 @@
                     <img src='./img/banner_gmi.jpg' alt=""/>
                 </div>
                 <div class="right_center">
-                    <img src="./img/btn_znph1.jpg" id="znph" onclick="changeCheckd(0)"/>
-                    <img src="./img/btn_znjc1.jpg" id="znjc" onclick="changeCheckd(1)"/>
+                    <img src="./img/btn_znph1.jpg" id="znph" onMouseOver="changeCheckd(0)"/>
+                    <img src="./img/btn_znjc1.jpg" id="znjc" onMouseOver="changeCheckd(1)"/>
                 </div>
                 <div class="right_bottom">
 
@@ -91,7 +84,6 @@
             </div>
         </div>
     </div>
-
 
     <!--合作伙伴-->
     <div class="panner" id='panner'>
@@ -110,21 +102,26 @@
             </div>
             <div class="panner_right_left">
                 <a href="http://www.naturade.com.cn/" target='_blank'>
-                    <img src='./img/btn_nre1.jpg' alt="" onMouseOver="pannerImg('nre')" id="nre"/>
+                    <img src='./img/btn_nre1.jpg' alt="" onMouseOver="pannerImg('nre')" onmouseleave="pannerLeaveImg()" id="nre"/>
                 </a>
                 <a href="http://www.lachapelle.cn/" target='_blank'>
-                    <img src='./img/btn_lsbe1.jpg' alt="" onMouseOver="pannerImg('lsbe')" id="lsbe"/>
+                    <img src='./img/btn_lsbe1.jpg' alt="" onMouseOver="pannerImg('lsbe')" onmouseleave="pannerLeaveImg()" id="lsbe"/>
                 </a>
                 <a href="http://www.naturade.com.cn/" target='_blank'>
-                    <img src='./img/btn_yge1.jpg' alt="" onMouseOver="pannerImg('yge')" id="yge"/>
+                    <img src='./img/btn_yge1.jpg' alt="" onMouseOver="pannerImg('yge')" onmouseleave="pannerLeaveImg()" id="yge"/>
                 </a>
                 <a href="http://www.peacebird.com.cn/" target='_blank'>
-                    <img src='./img/btn_tpn1.jpg' alt="" onMouseOver="pannerImg('tpn')" id="tpn"/>
+                    <img src='./img/btn_tpn1.jpg' alt="" onMouseOver="pannerImg('tpn')" onmouseleave="pannerLeaveImg()" id="tpn"/>
                 </a>
             </div>
 
         </div>
+        <div class="panner-pic">
+            <img src="./img/panner_bg.jpg " alt="">
+        </div>
     </div>
+
+    <!--联系我们-->
     <div class="footers" id='footer'>
         <div class="footer_left">
             <h2>CONTACT US</h2>
@@ -142,7 +139,31 @@
             <img src='./img/image_db.png' alt=""/>
         </div>
     </div>
+
+    <!--申请试用弹出模态框-->
+    <div class="md-modal md-effect-1" id="modal-1">
+        <div class="md-content">
+            <h3>功能升级中...</h3>
+            <div>
+                <p>请直接根据以下方式联系我们</p>
+                <ul>
+                    <li><strong>电话:</strong> 029-88867219</li>
+                    <li><strong>EMAIL:</strong> dumr@newmiracle.net</li>
+                    <li><strong>地址:</strong> 西安市雁塔区科技二路77号西安光电园B-28F</li>
+                </ul>
+                <button class="md-close">关闭</button>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="./js/index.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/modalEffects.js"></script>
+<script>
+    // this is important for IEs
+    var polyfilter_scriptpath = '/js/';
+</script>
+<script src="js/cssParser.js"></script>
+<script src="js/css-filters-polyfill.js"></script>
 </body>
 </html>

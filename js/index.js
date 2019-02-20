@@ -5,6 +5,7 @@ var nre=document.getElementById('nre')
 var lsbe=document.getElementById('lsbe')
 var yge=document.getElementById('yge')
 var tpn=document.getElementById('tpn')
+var nav=document.getElementById('nav')
 // 导航栏选中效果
 //锚点滑动效果
 $(function(){
@@ -108,4 +109,16 @@ function pannerImg(value){
 }
 function pannerLeaveImg(){
     nre.src='./img/btn_nre1.jpg',lsbe.src='./img/btn_lsbe1.jpg',yge.src='./img/btn_yge1.jpg',tpn.src='./img/btn_tpn1.jpg'
+<<<<<<< HEAD
+}
+var show=true
+function showNav(){
+        show=!show
+    if(show){
+        nav.style.display='none'
+    }else{
+        nav.style.display='block'
+    }
+=======
+>>>>>>> 9db7574c21d20e9a502d6fa6b25748dd1bc53697
 }

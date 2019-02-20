@@ -8,24 +8,6 @@ var tpn=document.getElementById('tpn')
 var nav=document.getElementById('nav')
 // 导航栏选中效果
 //锚点滑动效果
-$(function(){
-    //锚点跳转滑动效果
-    $('a[href*=#],area[href*=#]').click(function() {
-        console.log(this.pathname)
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var $target = $(this.hash);
-            $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
-            if ($target.length) {
-                var targetOffset = $target.offset().top;
-                $('html,body').animate({
-                        scrollTop: targetOffset
-                    },
-                    300);
-                return false;
-            }
-        }
-    });
-})
 
 var clientWidth = document.documentElement.clientWidth || document.body.offsetWidth;
 // 获取根元素html
@@ -109,16 +91,31 @@ function pannerImg(value){
 }
 function pannerLeaveImg(){
     nre.src='./img/btn_nre1.jpg',lsbe.src='./img/btn_lsbe1.jpg',yge.src='./img/btn_yge1.jpg',tpn.src='./img/btn_tpn1.jpg'
-<<<<<<< HEAD
 }
 var show=true
 function showNav(){
-        show=!show
+    show=!show
     if(show){
         nav.style.display='none'
     }else{
         nav.style.display='block'
     }
-=======
->>>>>>> 9db7574c21d20e9a502d6fa6b25748dd1bc53697
 }
+
+$(function(){
+    //锚点跳转滑动效果
+    $('a[href*=#],area[href*=#]').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({
+                        scrollTop: targetOffset
+                    },
+                    500);
+                return false;
+            }
+        }
+    });
+})

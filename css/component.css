@@ -78,6 +78,7 @@ perspective effects (not including the modals and the overlay).
 	position: relative;
 	border-radius: 0.03rem;
 	margin: 0 auto;
+	font-family: "Microsoft YaHei";
 }
 
 .md-content h3 {
@@ -103,6 +104,7 @@ perspective effects (not including the modals and the overlay).
 	margin: 0;
 	padding: 0.1rem 0;
 	font-size: 0.18rem;
+	color: black;
 }
 
 .md-content > div ul {
@@ -112,9 +114,12 @@ perspective effects (not including the modals and the overlay).
 
 .md-content > div ul li {
 	padding: 0.05rem 0;
+	color: rgb(170,170,170);
+}
+.md-content > div ul li span{
+	padding: 0.05rem 0;
 	color: black;
 }
-
 .md-content button {
 	display: block;
 	margin: 0 auto;

@@ -6,7 +6,21 @@
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <script src="./js/jquery-1.4.2.min.js"> </script>
-    <script src="./js/index.js"></script>
+    <script>
+        var clientWidth = document.documentElement.clientWidth || document.body.offsetWidth;
+        // 获取根元素html
+        var html = document.documentElement;
+        //获取当前视口宽度和标准宽度比例 * 标准rem单位得到html的font-size这里设置的行内样式权重最大
+        html.style.fontSize = clientWidth/1920*100 + "px";
+        // 监听window的onresize屏幕的尺寸变化
+        // 如果我们改变为横屏时，html的font-size发生变化
+        window.onresize = function () {
+            var clientWidth = document.documentElement.clientWidth || document.body.offsetWidth;
+            //获取当前视口宽度和标准宽度比例 * 标准rem单位 1rem=512px
+            document.documentElement.style.fontSize = clientWidth/1920*100 + "px";
+        };
+    </script>
+
 </head>
 <body>
 <div class="newmiracle">
@@ -161,7 +175,7 @@
         </div>
     </div>
 </div>
-
+<script src="./js/index.js"></script>
 <script src="./js/classie.js"></script>
 <script src="./js/modalEffects.js"></script>
 </body>

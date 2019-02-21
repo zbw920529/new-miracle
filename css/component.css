@@ -44,7 +44,7 @@ perspective effects (not including the modals and the overlay).
 	-webkit-box-shadow: rgba(18,46,78,0.5) 0px 0px 0.12rem;
 	-moz-box-shadow: rgba(18,46,78,0.5) 0px 0px 0.12rem;
 	box-shadow: rgba(18,46,78,0.5) 0px 0px 0.12rem;
-	background: rgb(42,93,148);
+	/*background: rgb(42,93,148);*/
 	box-sizing: border-box;
 	overflow: hidden;
 }
@@ -61,7 +61,6 @@ perspective effects (not including the modals and the overlay).
 	top: 0;
 	left: 0;
 	z-index: 1000;
-	/*opacity: 0;*/
 	background: rgba(143,27,15,0.8);
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;

@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <script src="./js/jquery-1.4.2.min.js"> </script>
+    <script src="./js/index.js"></script>
 </head>
 <body>
 <div class="newmiracle">
@@ -37,8 +38,8 @@
                 <a class="md-trigger" data-modal="modal-1">登陆GMI</a>
             </div>
         </div>
-        <div class="header-phone">
-            <p class="header-chekButton" onclick="showNav()">
+        <div class="header-phone" id="header-phone">
+            <p class="header-chekButton" onclick="showNav()" id="header-chekButton">
                 <span></span>
             </p>
         </div>
@@ -160,7 +161,6 @@
         </div>
     </div>
 </div>
-<script src="./js/index.js"></script>
 
 <script src="./js/classie.js"></script>
 <script src="./js/modalEffects.js"></script>

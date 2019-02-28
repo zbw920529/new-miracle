@@ -1,4 +1,3 @@
-
 var znph=document.getElementById('znph')
 var znjc=document.getElementById('znjc')
 var gif=document.getElementById('gif')
@@ -8,9 +7,16 @@ var yge=document.getElementById('yge')
 var tpn=document.getElementById('tpn')
 var nav=document.getElementById('nav')
 var headerChekButton=document.getElementById('header-chekButton')
+var btn_nre1='./img/btn_nre1.jpg'//nre1
+var btn_lsbe1='./img/btn_lsbe1.jpg'
+var btn_yge1='./img/btn_yge1.jpg'
+var btn_tpn1='./img/btn_tpn1.jpg'
+var btn_nre2='./img/btn_nre2.jpg' //nre2
+var btn_lsbe2='./img/btn_lsbe2.jpg'
+var btn_yge2='./img/btn_yge2.jpg'
+var btn_tpn2='./img/btn_tpn2.jpg'
 var show=true
 
-// 导航栏选中效果
 //锚点滑动效果
 function changeActive(navIndex){
     var navHome=document.getElementById('nav-home')
@@ -40,7 +46,6 @@ function changeActive(navIndex){
             )
     }
 }
-
 // 关于我们右边图片切换
 function changeCheckd(index){
     if(index===0){
@@ -58,30 +63,31 @@ function pannerImg(value){
     switch(value){
         case 'nre':
             return(
-                nre.src='./img/btn_nre2.jpg',lsbe.src='./img/btn_lsbe1.jpg',yge.src='./img/btn_yge1.jpg',tpn.src='./img/btn_tpn1.jpg'
+                nre.src=btn_nre2,lsbe.src=btn_lsbe1,yge.src=btn_yge1,tpn.src=btn_tpn1
             )
         case 'lsbe':
             return(
-                lsbe.src='./img/btn_lsbe2.jpg',nre.src='./img/btn_nre1.jpg',yge.src='./img/btn_yge1.jpg',tpn.src='./img/btn_tpn1.jpg'
+                lsbe.src=btn_lsbe2,nre.src=btn_nre1,yge.src=btn_yge1,tpn.src=btn_tpn1
             )
         case 'yge':
             return(
-                yge.src='./img/btn_yge2.jpg',nre.src='./img/btn_nre1.jpg',lsbe.src='./img/btn_lsbe1.jpg',tpn.src='./img/btn_tpn1.jpg'
+                yge.src=btn_yge2,nre.src=btn_nre1,lsbe.src=btn_lsbe1,tpn.src=btn_tpn1
             )
         case 'tpn':
             return(
-                tpn.src='./img/btn_tpn2.jpg', nre.src='./img/btn_nre1.jpg',lsbe.src='./img/btn_lsbe1.jpg',yge.src='./img/btn_yge1.jpg'
+                tpn.src=btn_tpn2, nre.src=btn_nre1,lsbe.src=btn_lsbe1,yge.src=btn_yge1
             )
         default:
             return(
-                nre.src='./img/btn_nre1.jpg',lsbe.src='./img/btn_lsbe1.jpg',yge.src='./img/btn_yge1.jpg',tpn.src='./img/btn_tpn1.jpg'
+                nre.src=btn_nre1,lsbe.src=btn_lsbe1,yge.src=btn_yge1,tpn.src=btn_tpn1
             )
     }
 }
+//离开合作伙伴区域后图片恢复默认
 function pannerLeaveImg(){
-    nre.src='./img/btn_nre1.jpg',lsbe.src='./img/btn_lsbe1.jpg',yge.src='./img/btn_yge1.jpg',tpn.src='./img/btn_tpn1.jpg'
+    nre.src=btn_nre1,lsbe.src=btn_lsbe1,yge.src=btn_yge1,tpn.src=btn_tpn1
 }
-
+// 移动端隐藏导航栏
 function showNav(){
     show=!show
     if(show){
@@ -96,9 +102,8 @@ function showNav(){
         headerChekButton.style.transition="transform 0.3s"
     }
 }
-
+//锚点跳转滑动效果
 $(function(){
-    //锚点跳转滑动效果
     $('a[href*=#],area[href*=#]').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var $target = $(this.hash);

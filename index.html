@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>数造未来|精益求精|西安新奇迹官网</title>
+    <title>数造未来 | 精益求精 | 西安新奇迹官网</title>
     <meta name="keywords" content="服装行业，智能商品管理系统，智能商品管理软件，商业智能，BI，人工智能，大数据">
     <meta name="description" content="西安新奇迹电子商务有限公司是一家专注于时尚行业全渠道运营、大数据开发、智能商品管理的软件开发公司，
     公司致力于研究时尚行业在互联网环境下全渠道一体化运行模式，重点通过大数据、人工智能等技术，创建一套商品全生命周期的智能调补货系统，
@@ -11,20 +11,15 @@
     <link rel="Shortcut Icon" href="./img/favicon-16x16.png" />
     <script src="./js/jquery-1.4.2.min.js"> </script>
     <script>
+        //设置1rem=100px
         var clientWidth = document.documentElement.clientWidth || document.body.offsetWidth;
-        // 获取根元素html
         var html = document.documentElement;
-        //获取当前视口宽度和标准宽度比例 * 标准rem单位得到html的font-size这里设置的行内样式权重最大
         html.style.fontSize = clientWidth/1920*100 + "px";
-        // 监听window的onresize屏幕的尺寸变化
-        // 如果我们改变为横屏时，html的font-size发生变化
         window.onresize = function () {
             var clientWidth = document.documentElement.clientWidth || document.body.offsetWidth;
-            //获取当前视口宽度和标准宽度比例 * 标准rem单位 1rem=512px
             document.documentElement.style.fontSize = clientWidth/1920*100 + "px";
         };
     </script>
-
 </head>
 <body>
 <div class="newmiracle">
@@ -38,26 +33,26 @@
         <!--{/*导航 切换*/}-->
         <ul class="nav" id="nav">
             <li class='nav-li'>
-                <a href="#banner" class='a' style="color:#72b8ff" onclick="changeActive('navHome')" id="nav-home">首页</a>
+                <a href="#banner" class='a' style="color:#72b8ff"  id="nav-home">首页</a>
             </li>
             <li class='nav-li'>
-                <a href="#about" class='a' onclick="changeActive('navAbout')" id="nav-about">关于我们</a>
+                <a href="#about" class='a' id="nav-about">关于我们</a>
             </li>
             <li class='nav-li'>
-                <a href="#panner" class='a' onclick="changeActive('navPanner')" id="nav-panner">合作伙伴</a>
+                <a href="#panner" class='a' id="nav-panner">合作伙伴</a>
             </li>
             <li class='nav-li'>
-                <a href="#footer" class='a' onclick="changeActive('navContact')" id="nav-contact">联系我们</a>
+                <a href="#footer" class='a' id="nav-contact">联系我们</a>
             </li>
         </ul>
         <div class="login main clearfix">
             <div class="warp column">
-                <a  class="md-trigger" data-modal="modal-1" >申请试用</a>
-                <a class="md-trigger" data-modal="modal-1">登录GMI</a>
+                <a  class="md-trigger" data-modal="modal">申请试用</a>
+                <a class="md-trigger" data-modal="modal">登录GMI</a>
             </div>
         </div>
         <div class="header-phone" id="header-phone">
-            <p class="header-chekButton" onclick="showNav()" id="header-chekButton">
+            <p class="header-chekButton" id="header-chekButton">
                 <span></span>
             </p>
         </div>
@@ -65,7 +60,9 @@
 
     <!--banner图-->
     <div class="banner" id='banner'>
-        <div class="banner-top"><img src='./img/banner_3.png' alt="banner" class="banner_tm"/></div>
+        <div class="banner-top">
+            <img src='./img/banner_3.png' alt="banner图" class="banner_tm"/>
+        </div>
     </div>
 
     <!--关于我们-->
@@ -93,15 +90,15 @@
         <div class="right">
             <div class="right-warp">
                 <div class="right_top">
-                    <img src='./img/banner_gmi.jpg' alt=""/>
+                    <img src='./img/banner_gmi.jpg' alt="banner图"/>
                 </div>
                 <div class="right_center">
-                    <img src="./img/btn_znph1.jpg" id="znph" onMouseOver="changeCheckd(0)"/>
-                    <img src="./img/btn_znjc1.jpg" id="znjc" onMouseOver="changeCheckd(1)"/>
+                    <img src="./img/btn_znph1.jpg" id="znph" onMouseOver="changeCheckd(0)" alt="智能配货"/>
+                    <img src="./img/btn_znjc1.jpg" id="znjc" onMouseOver="changeCheckd(1)" alt="智能决策"/>
                 </div>
                 <div class="right_bottom">
 
-                    <img src='./img/znph.gif' id='gif' alt=""/>
+                    <img src='./img/znph.gif' id='gif' alt="智能配货"/>
                 </div>
             </div>
         </div>
@@ -117,29 +114,28 @@
         </div>
         <div class="panner_right">
             <div class="panner_right_right">
-
                 <a href="http://wpa.qq.com/msgrd?v=3&uin=249900276&site=qq&menu=yes" target='_blank'>
-                    <img src='./img/image_cyhz.jpg' alt=""/>
+                    <img src='./img/image_cyhz.jpg' alt="诚邀合作"/>
                 </a>
             </div>
             <div class="panner_right_left">
                 <a href="http://www.naturade.com.cn/" target='_blank'>
-                    <img src='./img/btn_nre1.jpg' alt="" onMouseOver="pannerImg('nre')" onmouseleave="pannerLeaveImg()" id="nre"/>
+                    <img src='./img/btn_nre1.jpg' data-src="./img/btn_nre2.jpg"  back-src='./img/btn_nre1.jpg' alt="奈瑞儿" id="nre"/>
                 </a>
                 <a href="http://www.lachapelle.cn/" target='_blank'>
-                    <img src='./img/btn_lsbe1.jpg' alt="" onMouseOver="pannerImg('lsbe')" onmouseleave="pannerLeaveImg()" id="lsbe"/>
+                    <img src='./img/btn_lsbe1.jpg' data-src='./img/btn_lsbe2.jpg' back-src='./img/btn_lsbe1.jpg'alt="拉夏贝尔" id="lsbe"/>
                 </a>
                 <a href="http://www.youngor.com/" target='_blank'>
-                    <img src='./img/btn_yge1.jpg' alt="" onMouseOver="pannerImg('yge')" onmouseleave="pannerLeaveImg()" id="yge"/>
+                    <img src='./img/btn_yge1.jpg' data-src="./img/btn_yge2.jpg" back-src='./img/btn_yge1.jpg' alt="雅戈尔" id="yge"/>
                 </a>
                 <a href="http://www.peacebird.com.cn/" target='_blank'>
-                    <img src='./img/btn_tpn1.jpg' alt="" onMouseOver="pannerImg('tpn')" onmouseleave="pannerLeaveImg()" id="tpn"/>
+                    <img src='./img/btn_tpn1.jpg' data-src="./img/btn_tpn2.jpg" back-src='./img/btn_tpn1.jpg' alt="太平鸟" id="tpn"/>
                 </a>
             </div>
 
         </div>
         <div class="panner-pic">
-            <img src="./img/panner_bg.jpg " alt="">
+            <img src="./img/panner_bg.jpg" alt="合作伙伴背景图">
         </div>
     </div>
 
@@ -153,17 +149,17 @@
             <p>电话：029-88867219</p>
             <p class="fot_banquan"><small>Copyright@2011-2019 New miracle Ltd.西安新奇迹版权所有</small> </p>
             <div class="footer_wx">
-                <img src='./img/image_ewm.jpg' alt=""/>
+                <img src='./img/image_ewm.jpg' alt="专家微信"/>
             </div>
         </div>
 
         <div class="footer_right">
-            <img src='./img/image_db.png' alt=""/>
+            <img src='./img/image_db.png' alt="智能商品UI图"/>
         </div>
     </div>
 
     <!--申请试用弹出模态框-->
-    <div class="md-modal md-effect-1" id="modal-1">
+    <div class="md-modal md-effect-1" id="modal">
         <div class="md-content">
             <h3>功能升级中...</h3>
             <div>
@@ -173,13 +169,12 @@
                     <li><span>EMAIL:</span> dumr@newmiracle.net</li>
                     <li><span>地址:</span> 西安市雁塔区科技二路77号西安光电园B-28F</li>
                 </ul>
-                <button class="md-close">关闭</button>
+                <button class="md-close" id="md-close">关闭</button>
             </div>
         </div>
     </div>
+
+    <script src="./js/index.js"></script>
 </div>
-<script src="./js/index.js"></script>
-<script src="./js/classie.js"></script>
-<script src="./js/modalEffects.js"></script>
 </body>
 </html>

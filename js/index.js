@@ -11,11 +11,11 @@ function changeCheckd(index){
     if(index===0){
         $('#znph').attr('src','./img/btn_znph1.jpg');
         $('#znjc').attr('src','./img/btn_znjc1.jpg');
-        $('#gif').attr('src','http://new-miracle.oss-cn-beijing.aliyuncs.com/znph.gif?Expires=1552651834&OSSAccessKeyId=TMP.AQHLUa5TTV7BLSFsYWSaeDWnvXhdGbzmSkXKApTHXiEnGyC8iOqLQWleJvkbADAtAhUAvFJpdC-lEN-QeB9QROY6_nlklCcCFB1Zq8IeRsByers_KflD9nRS2vkA&Signature=W2sOZhE7V4q%2Fb7MIp1SJ8g%2Fya%2Fo%3D');
+        $('#gif').attr('src','./img/znph.gif');
     }else{
         $('#znph').attr('src','./img/btn_znph2.jpg');
         $('#znjc').attr('src','./img/btn_znjc2.jpg');
-        $('#gif').attr('src','https://new-miracle.oss-cn-beijing.aliyuncs.com/znjc.gif?Expires=1552651792&OSSAccessKeyId=TMP.AQHLUa5TTV7BLSFsYWSaeDWnvXhdGbzmSkXKApTHXiEnGyC8iOqLQWleJvkbADAtAhUAvFJpdC-lEN-QeB9QROY6_nlklCcCFB1Zq8IeRsByers_KflD9nRS2vkA&Signature=r%2FNSedZoCs%2FDqd%2BfGeHoDM2vGLc%3D');
+        $('#gif').attr('src','./img/znjc.gif');
     }
 };
 //鼠标移入合作伙伴区域后图片恢复默认

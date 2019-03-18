@@ -58,3 +58,7 @@ $(".md-trigger").click(function(){
 $(".md-close").click(function(){
     $('#modal').removeClass('md-show')
 });
+//解决移动端背景视频无法自动播放问题
+$(function(){
+    $("#video")[0].play();
+});

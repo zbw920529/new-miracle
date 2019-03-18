@@ -467,7 +467,6 @@ html,body,ul{
     }
     #video{
         width: 100%;
-        height: 100%;
     }
     .about{
         width: 100%;
@@ -476,7 +475,6 @@ html,body,ul{
         padding:0.5rem;
         box-sizing: border-box;
         color: #fff;
-
     }
     .about .left{
         font-size: 0.5rem;

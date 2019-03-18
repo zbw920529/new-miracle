@@ -414,7 +414,7 @@ html,body,ul{
         align-items: center;
         position: absolute;
         right: 0.5rem;
-        z-index: 100;
+        z-index: 1000;
     }
     .header-phone .header-chekButton{
         position: absolute;

@@ -83,7 +83,7 @@ html,body,ul{
         height: 7.29rem;
         overflow: hidden;
         position: relative;
-        /*background: url('../img/banner_3.png');*/
+        background: url('../img/banner.mp4');
     }
     #video{
         width: 100%;
@@ -388,6 +388,7 @@ html,body,ul{
         position: absolute;
         left: 0;
         overflow: hidden;
+        z-index: 100;
     }
     .nav li{
         width: 100%;

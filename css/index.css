@@ -1,4 +1,4 @@
-html,body{
+html,body,ul{
     padding: 0;
     margin: 0;
     font-family: "Chinese Quote", -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -10,7 +10,6 @@ html,body{
         width: 100%;
         height: 0.89rem;
         display: flex;
-        margin: 0;
         padding: 0 3.67rem;
         box-sizing: border-box;
         box-shadow: 0 0.03rem 0.1rem rgba(18,46,78,0.3);
@@ -22,22 +21,16 @@ html,body{
     .header_img{
         width: 0.89rem;
         height: 100%;
-        margin: 0;
-        padding: 0;
     }
     .header_img img{
-        margin: 0;
         display: inline-block;
         width: 0.89rem;
         height: 0.89rem;
-        padding: 0;
     }
     .nav{
         display: flex;
         width: 5.84rem;
         height: 0.89rem;
-        margin: 0;
-        padding: 0;
         align-items: center;
     }
     .nav li{
@@ -54,9 +47,6 @@ html,body{
         line-height: 0.89rem;
         text-decoration: none;
         color: #fff;
-    }
-    .nav li .active{
-        color: #72b8ff;
     }
     .login{
         width: 3.64993rem;

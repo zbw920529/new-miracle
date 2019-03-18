@@ -1,6 +1,3 @@
-var nav=document.getElementById('nav');
-var headerChekButton=document.getElementById('header-chekButton');
-var show=true;
 //导航栏切换选中效果
 $('.nav-li a').click(function() {
     $('.nav-li a').attr('style','color:rgb(255, 255, 255)')
@@ -27,18 +24,15 @@ $('.panner_right_left a img').mouseleave(function() {
     $(this).attr('src',$(this).attr('back-src'))
 });
 // 移动端隐藏导航栏
+var show=true;
 $('.header-chekButton').click(function() {
     show=!show;
     if(show){
-        nav.style.height=0;
-        nav.style.transition='height 0.6s';
-        headerChekButton.style.transform="rotate(0deg)";
-        headerChekButton.style.transition="transform 0.3s"
+        $('#nav').css({'height': 0,'transition': '0.6s'});
+        $('#header-chekButton').css({'transform': 'rotate(0deg)','transition': 'transform 0.3s' });
     }else{
-        nav.style.height='10rem';
-        nav.style.transition='height 0.6s';
-        headerChekButton.style.transform="rotate(-90deg)";
-        headerChekButton.style.transition="transform 0.3s"
+        $('#nav').css({'height': '10rem','transition': '0.6s'});
+        $('#header-chekButton').css({'transform':'rotate(-90deg)','transition': 'transform 0.3s'});
     }
 });
 //锚点跳转滑动效果
@@ -64,5 +58,3 @@ $(".md-trigger").click(function(){
 $(".md-close").click(function(){
     $('#modal').removeClass('md-show')
 });
-//禁止视频另存为
-$('#video').bind('contextmenu',function() { return video; });

@@ -408,12 +408,13 @@ html,body,ul{
         color: #fff;
     }
     .header-phone{
-        width: 50%;
         height: 2.5rem;
         display: flex;
         text-align: right;
         align-items: center;
-        position: relative;
+        position: absolute;
+        right: 0.5rem;
+        z-index: 100;
     }
     .header-phone .header-chekButton{
         position: absolute;
@@ -465,6 +466,7 @@ html,body,ul{
         height: auto;
         position: relative;
         top:2.5rem;
+        z-index: -200;
     }
     #video{
         width: 100%;

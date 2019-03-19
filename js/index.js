@@ -28,9 +28,11 @@ var show=true;
 $('.header-chekButton').click(function() {
     show=!show;
     if(show){
+        $('#banner').css('display','block')
         $('#nav').css({'height': 0,'transition': '0.6s'});
         $('#header-chekButton').css({'transform': 'rotate(0deg)','transition': 'transform 0.3s' });
     }else{
+        $('#banner').css('display','none')
         $('#nav').css({'height': '10rem','transition': '0.6s'});
         $('#header-chekButton').css({'transform':'rotate(-90deg)','transition': 'transform 0.3s'});
     }

@@ -471,7 +471,7 @@ html,body,ul{
         height: auto;
         position: relative;
         top:2.5rem;
-        z-index: -200;
+        z-index: -20000;
     }
     #video{
         display: none;
